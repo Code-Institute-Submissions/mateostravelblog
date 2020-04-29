@@ -1,15 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Ubuntu:400,400i,500,700&display=swap');
+@import url("https://use.typekit.net/ves2ggk.css");
 
-/* ------------------------------------ Colors */
+/* ------------------------------------ Font Styles For Proxima-Nova
+font-family: proxima-nova, sans-serif;
+font-weight: 400; 500; 700;
+font-style: normal;
+--- */
 
-.container {
-    border: 3px solid blue;
+/* ------------------------------------ Font Styles For Filson-Soft
+font-family: filson-soft, sans-serif;
+font-weight: 200; 400; 700; 900;
+font-style: normal;
+--- */
+
+/* ------------------------------------ Colors --- */
+
+
+
+
+/* ------------------------------------ Body --- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: filson-soft, sans-serif;
+    font-style: normal;
 }
 
-.row {
-    border: 3px solid gray;
+
+/* ------------------------------------ Jumbotron --- */
+
+.jumbotron {
+    background-image: url(../images/battlefield-of-waterloo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
-.heading {
-    font-family: 'Ubuntu', sans-serif;
+.first-image {
+    margin-top: 285px;
 }
