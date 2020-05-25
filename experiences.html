@@ -7,6 +7,15 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
 	<script src="https://kit.fontawesome.com/0764c37c6e.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -15,6 +24,7 @@
 
 <body>
 
+	<!---------------------------------------------------------------------------------- Header -->
 	<section id="header">
 		<header>
 			<a href="experiences.html"></a>
@@ -23,7 +33,7 @@
 				<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
 					<div class="container-fluid">
 						<a class="navbar-brand"
-							href="index.html"><img src="assets/logo/mateos-travel-blog-logo-white-sm.png"></a>
+							href="index.html"><img src="assets/logo/mateos-travel-blog-logo-white.png"></a>
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
@@ -41,7 +51,7 @@
 
 									<li class="nav-item list-inline-item">
 										<a class="nav-link"
-											href="tips-for-traveling.html"><i class="fa fa-info mr-2 d-none d-sm-inline" aria-hidden="true"></i><span>Tips for Traveling</span></a>
+											href="travel-tips.html"><i class="fa fa-info mr-2 d-none d-sm-inline" aria-hidden="true"></i><span>Travel Tips</span></a>
 									</li>
 
 									<li class="nav-item list-inline-item">
@@ -56,20 +66,253 @@
 		</header>
 	</section>
 
-	<div class="jumbotron text-center mt-4">
-		<div class="first-image">
-			<img src="assets/logo/mateos-travel-blog-logo-white-md.png" class="img-fluid" alt="Responsive image">
+	<!---------------------------------------------------------------------------------- Intro Jumbotron -->
+	<div class="jumbotron jumbotron-experience text-center mt-4">
+		<div class="intro-image">
+			<img src="assets/logo/mateos-travel-blog-logo-white.png" class="img-fluid" alt="Responsive image">
 			<div class="row">
-				<div class="col-12">
-					<button type="button" class="btn btn-primary btn-large">My Experiences</button>
-					<button type="button" class="btn btn-primary btn-large">Tips for Traveling</button>
+				<div class="intro-buttons col-12">
+					<button type="button" class="btn btn-outline-primary text-white btn-large">My Experiences</button>
+					<button type="button" class="btn btn-outline-primary text-white btn-large">Travel Tips</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<section id="dropdown-experiences">
-        
+	<!---------------------------------------------------------------------------------- Experience Intro Text -->
+	<section id="text-my-exp">
+		<div class="row text-center">
+			<div class="container-fluid">
+				<div class="col-12">
+					<h1 class="display-5 text-uppercase">Welcome To My Experiences</h1>
+					<hr>
+					<div class="col-12">
+						<p class="lead list-inline">From Berlin to Mexico and Back Home</p>
+						<p class="lead">My story starts in a town called Boynton Beach, Flroida, USA. After my birth, my
+							parents moved back to their hometown of Urireo, Guanajuato, Mexico. I was raised in Urireo
+							until the age of seven. During my time in Urireo, I was able to pick up the basics and core
+							stucture of Spanish. My time in Urireo has shaped my view on the world. This blog sheds
+							light on those experiences.</p>
+						<p class="lead">As you read into my travel blog, you'll get a snapshot of how I have been shaped
+							by the places I've visited. From Berlin, to Belgium, and the Czech Republic, every single
+							country has left it's mark on how I now view the world. Check it out!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</section>
+
+	<!---------------------------------------------------------------------------------- Horizontal Experience Menu | (Flags From www.countryflags.com) | (HTML & CSS Link: https://codepen.io/bbx/pen/Jxoqdg) -->
+	<section id="collapsible-menu">
+		<h2 class="display-5 text-center text-uppercase">My Trips</h2>
+		<div class="accordion text-center" id="accordionExample">
+
+			<!---------------------------------------------------------------------------------- FAILED TEST - Horizontal Card 1
+
+			<section id="flags">
+				<div class="container container-flag">
+					<div class="card card-flag">
+						<img class="img-flag" src="assets/images/belgium-flag-3d.png">
+						<div class="card__head">Belgium</div>
+					</div>
+					<div class="card card-flag">
+						<img class="img-flag" src="assets/images/czech-republic-flag-3d.png">
+						<div class="card__head">Czech Republic</div>
+					</div>
+					<div class="card card-flag">
+						<img class="img-flag" src="assets/images/united-kingdom-flag-3d.png">
+						<div class="card__head">United Kingdom</div>
+					</div>
+					<div class="card card-flag">
+						<img class="img-flag" src="assets/images/germany-flag-3d.png">
+						<div class="card__head">Germany</div>
+					</div>
+					<div class="card card-flag">
+						<img class="img-flag" src="assets/images/mexico-flag-3d.png">
+						<div class="card__head">Mexico</div>
+					</div>
+				</div>
+			</section>
+            -->
+
+			<!---------------------------------------------------------------------------------- Belgium Exp. Card 1 -->
+			<div class="card-1">
+				<div class="card-header" id="headingOne">
+					<h2 class="mb-0">
+						<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">BELGIUM</button>
+					</h2>
+				</div>
+				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+					data-parent="#accordionExample">
+					<div class="card-body">
+						<p>While in Germany, I lived at the CIEE Berlin Campus located at Gneisenaustraße 27, 10961
+							Berlin, Germany. I was lucky to be the first class of students to attend the brand new
+							Berlin campus. It was also my first time living in dorms. I was excited about all of the
+							unique experiences that were coming my way. Berlin did not disappoint - it exceeded my
+							expectations.
+						</p>
+						<p> From the rich history to the delicious bratwurst and doner kebabs, Germany has so much
+							to
+							offer! Berlin especially was a place of its own. Berlin gave me a very young yet
+							laidback
+							vibe. The area I lived in was called Kreuzberg. It was home to many students and a high
+							population of Turkish-German residents. My local barber was Turkish, and although we
+							could
+							not communicate at all, he knew exactly how to cut my hair. I have yet to find someone
+							that
+							cuts my hair as well as he did!
+						</p>
+						<p>
+							I left Germany with many amazing memories and an urge to return in the near future. Who
+							knows, I might go back one day to live in that beautiful country!
+						</p>
+					</div>
+
+					<div class="container container-gallery">
+						<div class="gallery-wrap">
+							<div class="item item-1-belgium"></div>
+							<div class="item item-2-belgium"></div>
+							<div class="item item-3-belgium"></div>
+							<div class="item item-4-belgium"></div>
+							<div class="item item-5-belgium"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!---------------------------------------------------------------------------------- Czech Republic Exp. Card 2 -->
+			<div class="card-2">
+				<div class="card-header" id="headingTwo">
+					<h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">CZECH REPUBLIC</button>
+					</h2>
+				</div>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					<div class="card-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+						squid.
+						3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+						laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+						coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+						anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+						occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+						heard
+						of them accusamus labore sustainable VHS.
+					</div>
+					<div class="container container-gallery">
+						<div class="gallery-wrap">
+							<div class="item item-1-czech-republic"></div>
+							<div class="item item-2-czech-republic"></div>
+							<div class="item item-3-czech-republic"></div>
+							<div class="item item-4-czech-republic"></div>
+							<div class="item item-5-czech-republic"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!---------------------------------------------------------------------------------- United Kingdom / England Exp. Card 3 -->
+			<div class="card-3">
+				<div class="card-header" id="headingThree">
+					<h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">UNITED KINGDOM</button>
+					</h2>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					<div class="card-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+						squid.
+						3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+						laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+						coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+						anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+						occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+						heard
+						of them accusamus labore sustainable VHS.
+					</div>
+					<div class="container container-gallery">
+						<div class="gallery-wrap">
+							<div class="item item-1-united-kingdom"></div>
+							<div class="item item-2-united-kingdom"></div>
+							<div class="item item-3-united-kingdom"></div>
+							<div class="item item-4-united-kingdom"></div>
+							<div class="item item-5-united-kingdom"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!---------------------------------------------------------------------------------- Germany Exp. Card 4 -->
+			<div class="card-4">
+				<div class="card-header" id="headingFour">
+					<h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">GERMANY</button>
+					</h2>
+				</div>
+				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+					<div class="card-body">
+						In 2015, I took the first leap into my love for travel. Prior to 2015, the only places I
+						travel
+						to inlcuded Mexico and some states within the US. In the Spring time of 2015, I signed up
+						for a
+						$10,000 scholarhsip to study aborad at the brand new CIEE Berlin Campus. After a few months
+						had
+						passing since I filled out the
+						scholarhsip applicaiton, I received news that I was a recipient of the scholarhsip. My
+						parents
+						had no idea I had signed up and when I finaly told them the good news, they were scared and
+						totally against me taking the trip. Despite their pushback, I was able to finaly convince
+						them
+						to let me fly!
+					</div>
+					<div class="container container-gallery">
+						<div class="gallery-wrap">
+							<div class="item item-1-germany"></div>
+							<div class="item item-2-germany"></div>
+							<div class="item item-3-germany"></div>
+							<div class="item item-4-germany"></div>
+							<div class="item item-5-germany"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!---------------------------------------------------------------------------------- Mexico Exp. Card 5 -->
+			<div class="card-5">
+				<div class="card-header" id="headingFive">
+					<h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">MEXICO</button>
+					</h2>
+				</div>
+				<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+					<div class="card-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+						squid.
+						3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+						laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+						coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+						anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+						occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+						heard
+						of them accusamus labore sustainable VHS.
+					</div>
+					<div class="container container-gallery">
+						<div class="gallery-wrap">
+							<div class="item item-1-mexico"></div>
+							<div class="item item-2-mexico"></div>
+							<div class="item item-3-mexico"></div>
+							<div class="item item-4-mexico"></div>
+							<div class="item item-5-mexico"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
 	</section>
 
 	<footer>
