@@ -17,19 +17,20 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 	<script src="https://kit.fontawesome.com/0764c37c6e.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 	<title>Mateo's Travel Blog</title>
 </head>
 
 <body>
 
+	<!---------------------------------------------------------------------------------- Header -->
 	<section id="header">
 		<header>
 			<a href="index.html"></a>
 
-			<div class="col-12 no-gutters pb-5">
-				<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+			<div class="col-12 no-gutters">
+				<nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
 					<div class="container-fluid">
 						<a class="navbar-brand"
 							href="index.html"><img src="assets/logo/mateos-travel-blog-logo-white.png"></a>
@@ -37,7 +38,7 @@
                         <span class="navbar-toggler-icon"></span>
                         </button>
 							<div class="collapse navbar-collapse" id="navbarNav">
-								<ul class="navbar-nav ml-auto">
+								<ul class="navbar-nav ml-auto text-right">
 									<li class="nav-item list-inline-item active">
 										<a class="nav-link"
 											href="index.html"><i class="fa fa-home mr-2 d-none d-sm-inline" aria-hidden="true"></i><span>Home</span></a>
@@ -65,13 +66,13 @@
 		</header>
 	</section>
 
-	<div class="jumbotron jumbotron-index text-center mt-4">
+	<div class="jumbotron jumbotron-index text-center">
 		<div class="intro-image">
 			<img src="assets/logo/mateos-travel-blog-logo-white.png" class="img-fluid" alt="Responsive image">
 			<div class="row">
 				<div class="intro-buttons col-12">
-					<button type="button" class="btn btn-outline-primary text-white btn-large">My Experiences</button>
-					<button type="button" class="btn btn-outline-primary text-white btn-large">Travel Tips</button>
+                <a href="experiences.html" class="hvr-grow">
+					<button type="button" class="btn text-white btn-large">Jump On Board</button></a>
 				</div>
 			</div>
 		</div>
@@ -108,35 +109,43 @@
 		<hr>
 		<div class="row text-center">
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<i class="fa fa-home" aria-hidden="true"></i>
+				<a class="hvr-icon-grow" href="experiences.html">
+					<i class="fa fa-home hvr-icon" aria-hidden="true"></i>
 				<h3>Sanpshot of my Travels</h3>
-				<p>No Place Like Home!</p>
+				<p>My Experiences</p>
+                </a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<i class="fa fa-suitcase-rolling" aria-hidden="true"></i>
-				<h3>My Experiences</h3>
-				<p>One Heck Of A Ride!</p>
+            <a class="hvr-icon-grow" href="travel-tips.html">
+				<i class="fa fa-suitcase-rolling hvr-icon" aria-hidden="true"></i>
+				<h3>The Do's and Dont's of Traveling</h3>
+				<p>Travel Tips</p>
+            </a>
 			</div>
 			<div class="col-sm-12 col-md-4">
-				<i class="fa fa-comment-o" aria-hidden="true"></i>
-				<h3>Contact Me</h3>
-				<p>Need Tips On Planning Your Next Trip?</p>
+            <a class="hvr-icon-grow" href="contact.html">
+				<i class="fa fa-comment-o hvr-icon" aria-hidden="true"></i>
+				<h3>Need Tips On Planning Your Next Trip?</h3>
+				<p>Contact Me</p>
+            </a>
 			</div>
 		</div>
 		<hr class="my-4">
 	</div>
 
+	<!---------------------------------------------------------------------------------- Footer -->
+
 	<footer>
 		<div class="container-fluid">
 			<div class="row text-center">
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<hr class="light">
 					<h3>Connect With Me</h3>
 					<hr class="light">
 					<p>561-229-8259</p>
 					<p>mavila2@outlook.com</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<hr class="light">
 					<h3>Find Me Online</h3>
 					<hr class="light">
@@ -145,14 +154,6 @@
 						<a href="instagram.com"><i class="fa fa-instagram"></i></a>
 						<a href="linkedin.com"><i class="fa fa-linkedin"></i></a>
 						<a href="youtube.com"><i class="fa fa-youtube"></i></a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<hr class="light">
-					<h3>Check Out My Blog</h3>
-					<hr class="light">
-					<div class="col-12 social">
-						<p>Coming Soon!</p>
 					</div>
 				</div>
 				<div class="col-12">
