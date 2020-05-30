@@ -67,7 +67,7 @@ font-style: normal;
   transition-property: color, background-color;
 }
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #2098D1;
+  background-color: #05386b;
   color: white;
 }
 
@@ -90,6 +90,15 @@ h1,h2,h3,h4 {
     color: #fafafa;
 }
 
+/* ------------------------------------ HR Style From https://css-tricks.com/examples/hrs/ - by Dan Eden --- */
+
+.hr-style {
+    border: 0;
+    height: 3px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 
 /* ------------------------------------ Nav Bar --- */
 
@@ -105,8 +114,9 @@ h1,h2,h3,h4 {
     width: 100px;
 }
 
-.list-inline-item li {
+.navbar-dark .navbar-toggler {
     color: #05386b;
+    border-color: #05386b;
 }
 
 .list-inline-item:not(:last-child) {
@@ -156,15 +166,60 @@ h1,h2,h3,h4 {
 
 .intro-buttons {
     margin-top: 80px;
-    color: white;
+    color: #fafafa;
 }
 
-/* ------------------------------------ Intro Text --- */
+/* ------------------------------------ Index - Intro Img and Text --- */
 
-h1 {
-    margin: 50px 25px;
-    padding: 25px;
+#intro-text {
+    margin: 10px 0 25px 0;
+    padding: 0;
 }
+
+#intro-text h2 {
+    font-size: 30pt;
+    padding: 25px 25px 25px 25px;
+}
+
+.intro-img {
+    background-image: url(../images/top-of-lions-mound.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.intro-text {
+    font-family: filson-soft, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15pt;
+    padding: 20px 30px 40px 30px;
+    max-height: 100%;
+}
+
+/* ------------------------------------ Menu Map --- */
+
+#menu-map {
+    margin: 10px 0 40px 0;
+    padding: 0;
+}
+
+.menu-map {
+    margin: 10px 0 25px 0;
+}
+
+.menu-map h2 {
+    font-size: 30pt;
+    padding: 25px 25px 25px 25px;
+}
+
+
+
+
+
+
+
 
 /* ------------------------------------ Vertical Travel Menu (Credit Link: https://codepen.io/bbx/pen/Jxoqdg) 
 
@@ -236,10 +291,6 @@ h1 {
 }
 
 --- */
-
-
-/* ------------------------------------ Collapsible Menu --- */
-
 
 
 /* ------------------------------------ Collapsible Menu Gallery --- */
@@ -397,7 +448,7 @@ h1 {
 }
 
 
-/* ----------------------------------- Card Body - Responsive Card Hover Effects From https://youtu.be/8b2mTq0Xrtw -------- **/
+/* ----------------------------------- Card Body - Responsive Card Hover Effects From https://youtu.be/8b2mTq0Xrtw --- */
 
 #card-container {
     display: flex;
