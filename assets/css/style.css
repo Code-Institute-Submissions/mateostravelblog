@@ -74,16 +74,14 @@ font-style: normal;
 
 
 
-/* ------------------------------------ Body and Headings --- */
+/* ------------------------------------ Body and Headings - Gradient Style from https://css-tricks.com/css3-gradients/ --- */
 
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
     font-family: filson-soft, sans-serif;
     font-style: normal;
-    color: #05386b;
-    background: #5cdb95;
+    background-image: radial-gradient( circle at bottom center, #05386b, #008080 50% );
 }
 
 h1,h2,h3,h4 {
@@ -115,8 +113,7 @@ h1,h2,h3,h4 {
 }
 
 .navbar-dark .navbar-toggler {
-    color: #05386b;
-    border-color: #05386b;
+    border: 2px solid #5cdb95;
 }
 
 .list-inline-item:not(:last-child) {
@@ -138,7 +135,10 @@ h1,h2,h3,h4 {
 }
 
 .jumbotron-index {
-    background-image: url(../images/battlefield-of-waterloo-overlay.png);
+    background-image: url(../images/dresden3.jpg);
+    background-size: cover;
+    background-position: inherit;
+    height: 750px;
 }
 
 .jumbotron-experience {
@@ -155,13 +155,12 @@ h1,h2,h3,h4 {
 }
 
 .jumbotron button {
+    border: 2px solid #5cdb95;
     border-radius: 12px;
-    border-style: solid;
-    border-color: #5cdb95;
 }
 
 .jumbotron button:hover {
-    background: #5cdb95;
+    background-image: radial-gradient( circle at bottom right, #05386b, #008080 50% );
 }
 
 .intro-buttons {
@@ -172,8 +171,9 @@ h1,h2,h3,h4 {
 /* ------------------------------------ Index - Intro Img and Text --- */
 
 #intro-text {
-    margin: 10px 0 25px 0;
+    margin: 10px 0 40px 0;
     padding: 0;
+    color: #fafafa;
 }
 
 #intro-text h2 {
@@ -181,12 +181,23 @@ h1,h2,h3,h4 {
     padding: 25px 25px 25px 25px;
 }
 
+.intro {
+    margin: 10px 10px 20px 10px;
+}
+
 .intro-img {
-    background-image: url(../images/top-of-lions-mound.jpg);
+    background: url(../images/london-river-thames.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 30px;
+    min-height: 350px;
+    margin-bottom: 20px;
+    border: 2px solid #5cdb95;
+    border-radius: 50px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .intro-text {
@@ -194,19 +205,19 @@ h1,h2,h3,h4 {
     font-weight: 200;
     font-style: normal;
     font-size: 15pt;
-    padding: 20px 30px 40px 30px;
+    padding: 20px 30px 20px 30px;
     max-height: 100%;
 }
 
-/* ------------------------------------ Menu Map --- */
+/* ------------------------------------ Menu Map / Style from https://youtu.be/9cKsq14Kfsw --- */
 
 #menu-map {
-    margin: 10px 0 40px 0;
+    margin: 10px 0 70px 0;
     padding: 0;
 }
 
 .menu-map {
-    margin: 10px 0 25px 0;
+    margin: 20px 0 25px 0;
 }
 
 .menu-map h2 {
@@ -214,11 +225,80 @@ h1,h2,h3,h4 {
     padding: 25px 25px 25px 25px;
 }
 
+.menu-icons {
+    margin: 50px 0 50px 0;
+}
+
+.menu-icons div {
+    margin-bottom: 20px;
+}
+
+.menu-icons p {
+    font-family: filson-soft, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15pt;
+}
+
+.menu-icons a {
+    width: 100%;
+    text-decoration: none;
+    color: #fafafa;
+    height: 150px;
+}
+
+.menu-icons i {
+    margin: 20px 0 20px 0;
+    font-size: 26px;
+}
 
 
+/* ------------------------------------ Footer --- */
 
+footer {
+    color: #fafafa;
+    min-height: 200px;
+    margin: 20px 0 20px 0;
+}
 
+.footer h3 {
+    font-size: 20pt;
+    padding: 20px 25px 20px 25px;
+}
 
+.footer p {
+    font-family: filson-soft, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 12pt;
+}
+
+.social {
+    min-height: 60px;
+} 
+
+.social i {
+    width: 40px;
+    height: 20px;
+    margin-top: 5px;
+    padding: 20px 0px 30px 0px;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    border: 2px solid #5cdb95;
+    border-radius: 50px;
+    color: #fafafa;
+    background: transparent;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+}
+
+.social i:hover {
+    background-image: radial-gradient( circle at bottom right, #05386b, #008080 50% );
+}
 
 
 /* ------------------------------------ Vertical Travel Menu (Credit Link: https://codepen.io/bbx/pen/Jxoqdg) 
@@ -293,7 +373,7 @@ h1,h2,h3,h4 {
 --- */
 
 
-/* ------------------------------------ Collapsible Menu Gallery --- */
+/* ------------------------------------ Accordion Image Menu Gallery from https://codepen.io/stefcharle/pen/Gydvbx --- */
 
 .container-gallery {
   padding: 75px 0;
