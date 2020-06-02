@@ -206,7 +206,7 @@ h1,h2,h3,h4 {
 }
 
 .intro-img {
-    background: url(../images/london-river-thames.jpg);
+    background: url(../images/top-of-lions-mound.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,8 +275,17 @@ h1,h2,h3,h4 {
 
 
 
-/* ----------------------------------------------------------------------- EXPERIENCES ----- */
 
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- EXPERIENCES ----- */
+/* ------------------------------ Experience Intro Text */
 #experiences {
     margin: 10px 0 40px 0;
     padding: 0;
@@ -306,6 +315,8 @@ h1,h2,h3,h4 {
     max-height: 100%;
 }
 
+/* ------------------------------ Collapsible Exp. Menu from Bootstrap */
+
 #collapsible-menu {
     margin: 10px 0 40px 0;
     padding: 0;
@@ -317,13 +328,35 @@ h1,h2,h3,h4 {
     padding: 25px 25px 25px 25px;
 }
 
+#collapsible-menu h3 {
+    font-size: 25pt;
+    padding: 25px 25px 25px 25px;
+}
+
 .vertical-accordion {
     height: 100%;
-    border: 2px solid #5cdb95;
-    border-radius: 50px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
     margin: 40px 30px 40px 30px;
+    border: 2px solid #5cdb95;
+    border-radius: 50px;
 }
+
+.card-header:hover {
+    background-image: radial-gradient( circle at bottom right, #05386b, #008080 40% );
+}
+
+.card-1 .card-header:hover {
+    background-image: radial-gradient( circle at bottom right, #05386b, #008080 40% );
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.card-5 .card-header:hover {
+    background-image: radial-gradient( circle at bottom right, #05386b, #008080 40% );
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
 
 .btn-link {
     font-weight: 400;
@@ -342,62 +375,12 @@ h1,h2,h3,h4 {
     color: #fafafa;
 }
 
-/* ------------------------------ My Trip Cards with Flags from Bootstrap */
-
-.belgium-flag {
-  background-image: url(../images/belgium-flag-3d.png);
-  flex: 1;
-  height: inherit;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-}
-
-.czech-republic-flag {
-  background-image: url(../images/czech-republic-flag-3d.png);
-  flex: 1;
-  height: inherit;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.germany-flag {
-  background-image: url(../images/germany-flag-3d.png);
-  flex: 1;
-  height: inherit;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.mexico-flag {
-  background-image: url(../images/mexico-flag-3d.png);
-  flex: 1;
-  height: inherit;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.united-kingdom-flag {
-  background-image: url(../images/united-kingdom-flag-3d.png);
-  flex: 1;
-  height: inherit;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-/* --- Accordion Image Menu Gallery from https://codepen.io/stefcharle/pen/Gydvbx --- */
+/* --- Accordion Image Gallery from https://codepen.io/stefcharle/pen/Gydvbx --- */
 
 .container-gallery {
   padding: 0;
   margin: 0 auto;
+  margin-bottom: 30px;
   width: 1140px;
   transform: skew(2deg);
   border: 2px solid #5cdb95;
@@ -479,6 +462,49 @@ h1,h2,h3,h4 {
   background-image: url(../images/prague-with-harry.jpg);
 }
 
+/* ------------------------------------ Germany Gallery --- */
+
+.item-1-germany {
+  background-image: url(../images/cheers1.jpg);
+}
+
+.item-2-germany {
+  background-image: url(../images/ciee.g.27.jpg);
+}
+
+.item-3-germany {
+  background-image: url(../images/berlin-christmas-mall.jpg);
+}
+
+.item-4-germany {
+  background-image: url(../images/doner.jpg);
+}
+
+.item-5-germany {
+  background-image: url(../images/brandenburg-gate-1.jpg);
+}
+
+/* ------------------------------------ Mexico Gallery --- */
+
+.item-1-mexico {
+  background-image: url(../images/#);
+}
+
+.item-2-mexico {
+  background-image: url(../images/salvaierra.png);
+}
+
+.item-3-mexico {
+  background-image: url(../images/#);
+}
+
+.item-4-mexico {
+  background-image: url(../images/#);
+}
+
+.item-5-mexico {
+  background-image: url(../images/#);
+}
 
 /* ------------------------------------ United Kingdom / England Gallery --- */
 
@@ -502,49 +528,92 @@ h1,h2,h3,h4 {
   background-image: url(../images/inside-london-eye.jpg);
 }
 
-/* ------------------------------------ Germany Gallery --- */
 
-.item-1-germany {
-  background-image: url(../images/cheers1.jpg);
+/* ------------------------------------------------- Plain Travel Cards ----- */
+
+.belgium-img {
+    background: url(../images/mont-des-arts.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    margin-bottom: 20px;
+    border: 2px solid #5cdb95;
+    border-radius: 50px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
-.item-2-germany {
-  background-image: url(../images/berlin-wall.jpg);
+.czech-republic-img {
+    background: url(../images/prague-castle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    margin-bottom: 20px;
+    border: 2px solid #5cdb95;
+    border-radius: 50px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
-.item-3-germany {
-  background-image: url(../images/berlin-christmas-mall.jpg);
+.germany-img {
+    background: url(../images/ciee.g.27.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    margin-bottom: 20px;
+    border: 2px solid #5cdb95;
+    border-radius: 50px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
-.item-4-germany {
-  background-image: url(../images/olympiastadion-berlin3.jpeg);
+.mexico-img {
+    background: url(../images/salvaierra.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    margin-bottom: 20px;
+    border: 2px solid #5cdb95;
+    border-radius: 50px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
-.item-5-germany {
-  background-image: url(../images/brandenburg-gate-2.jpg);
+.united-kingdom-img {
+    background: url(../images/london-river-thames.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    margin-bottom: 20px;
+    border: 2px solid #5cdb95;
+    border-radius: 50px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
-/* ------------------------------------ Mexico Gallery --- */
 
-.item-1-mexico {
-  background-image: url(../images/emirates-stadium-overlay.png);
-}
 
-.item-2-mexico {
-  background-image: url(../images/emirates-stadium-overlay.png);
-}
 
-.item-3-mexico {
-  background-image: url(../images/emirates-stadium-overlay.png);
-}
 
-.item-4-mexico {
-  background-image: url(../images/emirates-stadium-overlay.png);
-}
 
-.item-5-mexico {
-  background-image: url(../images/emirates-stadium-overlay.png);
-}
+
+
+
 
 
 
