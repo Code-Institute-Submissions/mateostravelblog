@@ -129,7 +129,7 @@ h1,h2,h3,h4 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 750px;
+    height: 725px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -147,7 +147,7 @@ h1,h2,h3,h4 {
 }
 
 .jumbotron-tips {
-    background-image: url(../images/emirates-stadium-overlay.png);
+    background-image: url(../images/berlin-christmas-market3.jpg);
 }
 
 .jumbo-overlay { /* --- Code from: https://stackoverflow.com/questions/34702477/add-a-dark-overlay-to-background-image --- */
@@ -197,7 +197,7 @@ h1,h2,h3,h4 {
 }
 
 #intro-text h2 {
-    font-size: 30pt;
+    font-size: 35pt;
     padding: 25px 25px 25px 25px;
 }
 
@@ -241,7 +241,7 @@ h1,h2,h3,h4 {
 }
 
 .menu-map h2 {
-    font-size: 30pt;
+    font-size: 35pt;
     padding: 25px 25px 25px 25px;
 }
 
@@ -284,6 +284,11 @@ h1,h2,h3,h4 {
 
 
 
+
+
+
+
+
 /* ----------------------------------------------------------------------- EXPERIENCES ----- */
 /* ------------------------------ Experience Intro Text */
 #experiences {
@@ -293,7 +298,7 @@ h1,h2,h3,h4 {
 }
 
 #experiences h2 {
-    font-size: 30pt;
+    font-size: 35pt;
     padding: 25px 25px 25px 25px;
 }
 
@@ -315,7 +320,7 @@ h1,h2,h3,h4 {
     max-height: 100%;
 }
 
-/* ------------------------------ Collapsible Exp. Menu from Bootstrap */
+/* ------------------------------ Accordion Collapsible Exp. Menu from Bootstrap */
 
 #collapsible-menu {
     margin: 10px 0 40px 0;
@@ -324,7 +329,7 @@ h1,h2,h3,h4 {
 }
 
 #collapsible-menu h2 {
-    font-size: 30pt;
+    font-size: 35pt;
     padding: 25px 25px 25px 25px;
 }
 
@@ -357,12 +362,12 @@ h1,h2,h3,h4 {
     border-bottom-right-radius: 50px;
 }
 
-
 .btn-link {
-    font-weight: 400;
+    font-weight: 700;
     color: #fafafa;
     text-decoration: none;
     font-size: 25pt;
+    letter-spacing: .5em;
 }
 
 .btn-link:focus {
@@ -375,17 +380,17 @@ h1,h2,h3,h4 {
     color: #fafafa;
 }
 
-/* --- Accordion Image Gallery from https://codepen.io/stefcharle/pen/Gydvbx --- */
+/* --- Image Gallery from https://codepen.io/stefcharle/pen/Gydvbx --- */
 
 .container-gallery {
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 30px;
-  width: 1140px;
-  transform: skew(2deg);
+  margin-bottom: 45px;
+  width: 900px;
+  transform: skew(-2deg);
   border: 2px solid #5cdb95;
   border-radius: 50px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 1.5);
 }
 
 .gallery-wrap {
@@ -487,7 +492,7 @@ h1,h2,h3,h4 {
 /* ------------------------------------ Mexico Gallery --- */
 
 .item-1-mexico {
-  background-image: url(../images/#);
+  background-image: url(../images/basílica-de-guadalupe.jpg);
 }
 
 .item-2-mexico {
@@ -495,15 +500,15 @@ h1,h2,h3,h4 {
 }
 
 .item-3-mexico {
-  background-image: url(../images/#);
+  background-image: url(../images/teotihuacán.jpg);
 }
 
 .item-4-mexico {
-  background-image: url(../images/#);
+  background-image: url(../images/elote.jpg);
 }
 
 .item-5-mexico {
-  background-image: url(../images/#);
+  background-image: url(../images/nativity-mexico.jpg);
 }
 
 /* ------------------------------------ United Kingdom / England Gallery --- */
@@ -606,6 +611,31 @@ h1,h2,h3,h4 {
     -webkit-transition: all .5s ease-in-out;
 }
 
+.country-info {
+    margin: 10px 10px 10px 10px;
+}
+
+.country-text {
+    font-family: filson-soft, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15pt;
+    padding: 20px 30px 30px 30px;
+    max-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -618,6 +648,37 @@ h1,h2,h3,h4 {
 
 
 /* ----------------------------------------------------------------------- TRAVEL TIPS ----- */
+/* ------------------------------------------------- Travel Tips Intro ----- */
+
+#travel-tips {
+    margin: 10px 0 40px 0;
+    padding: 0;
+    color: #fafafa;
+}
+
+#travel-tips h2 {
+    font-size: 35pt;
+    padding: 25px 25px 25px 25px;
+}
+
+#travel-tips h3 {
+    font-size: 20pt;
+    padding: 0px 25px 20px 25px;
+}
+
+.tips-intro {
+    margin: 10px 10px 20px 10px;
+}
+
+.tips-text {
+    font-family: filson-soft, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15pt;
+    padding: 20px 30px 20px 30px;
+    max-height: 100%;
+}
+
 /* ------------------------------------------------- Travel Tips Cards ----- */
 
 #travel-tips-cards {
@@ -636,6 +697,14 @@ h1,h2,h3,h4 {
 /* ----------------------------------- Card Body - Responsive Card Hover Effects From https://youtu.be/8b2mTq0Xrtw --- */
 
 #card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#card-container2 {
     display: flex;
     justify-content: center;
     align-items: center;
