@@ -150,6 +150,10 @@ h1,h2,h3,h4 {
     background-image: url(../images/berlin-christmas-market3.jpg);
 }
 
+.jumbotron-contact {
+    background-image: url(../images/teotihuacán.jpg);
+}
+
 .jumbo-overlay { /* --- Code from: https://stackoverflow.com/questions/34702477/add-a-dark-overlay-to-background-image --- */
     position: absolute;
     top: 0;
@@ -174,6 +178,10 @@ h1,h2,h3,h4 {
     width: 300px;
 }
 
+.jumbotron .quote {
+    width: auto;
+}
+
 .jumbotron button {
     border: 2px solid #5cdb95;
     border-radius: 12px;
@@ -183,7 +191,7 @@ h1,h2,h3,h4 {
     background-image: radial-gradient( circle at bottom right, #05386b, #008080 50% );
 }
 
-.intro-buttons {
+.intro-button {
     margin-top: 80px;
     color: #fafafa;
 }
@@ -271,20 +279,6 @@ h1,h2,h3,h4 {
     margin: 20px 0 20px 0;
     font-size: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -626,27 +620,6 @@ h1,h2,h3,h4 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------------------------------------------------------------------- TRAVEL TIPS ----- */
 /* ------------------------------------------------- Travel Tips Intro ----- */
 
@@ -679,112 +652,162 @@ h1,h2,h3,h4 {
     max-height: 100%;
 }
 
-/* ------------------------------------------------- Travel Tips Cards ----- */
+/* ------------------------------------------------- Travel Cards - Code from https://codepen.io/YaroslavW/pen/WZQEza ----- */
 
-#travel-tips-cards {
-    margin: 0;
+#travel-cards {
+    margin: 70px 0 40px 0;
     padding: 0;
+    min-height: 300px;
+    font-family: sans-serif;
+}
+
+#travel-cards .row {
+    height: 50vh;
+    margin: 0;
+}
+
+#travel-cards h3 {
+    font-size: 20pt;
+    padding: 0px 25px 20px 25px;
 }
 
 .card-tip {
-    width: 20em;
-    height: 40em;
-    margin: auto;
-    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: auto;
+    background: #000;
+    border: 3px solid #5cdb95;
+    border-radius: 50px;
 }
 
-
-/* ----------------------------------- Card Body - Responsive Card Hover Effects From https://youtu.be/8b2mTq0Xrtw --- */
-
-#card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-#card-container2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-.card-container {
-    position: relative;
-    width: 1100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-}
-
-.new-card {
-    position: relative;
-    max-width: 450px;
-    height: 250px;
-    background: #fff;
-    margin: 30px 20px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in-out;
-}
-
-.new-card:hover {
-    height: 500px;
-}
-
-.hover-img {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    top: -10px;
-    left: 60px;
-    z-index: 1;
-}
-
-.card-img {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    top: -10px;
-    left: 60px;
-    z-index: 1;
-}
-
-.gif-img {
-    width: 350px;
-    height: 330px;
-    left: 35px;
-    top: 5px;
-}
-
-.hover-img img {
+.card-tip .card-img {
     width: 100%;
-    border-radius: 4px;
+    height: 275px;
+    overflow: hidden;
+    border-radius: 50px;
 }
 
-.container-content {
-    position: relative;
-    margin-top: -200px;
-    padding: 40px 15px;
+.card-tip .card-img img {
+    width: 100%;
+    height: inherit;
+    transition: .5s;
+}
+
+.card-tip:hover .card-img img {
+    opacity: .7;
+    transform: translateX(30%);/*100%*/
+}
+
+.card-tip .card-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+
+.card-tip:hover .card-details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+
+.card-tip .card-details .card-text {
+    padding: 20px;
     text-align: center;
-    color: #111;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
+    background-image: radial-gradient( circle at bottom right, #05386b, #008080 50% );
+    border: 2px solid #5cdb95;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.new-card:hover .container-content {
-    visibility: visible;
-    opacity: 1;
-    margin-top: -25px;
-    transition-delay: 0.1s;
+.card-tip .card-details .card-text h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.card-tip .card-details .card-text p {
+    margin: 0;
+    color: #fff;
+    font-family: filson-soft, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 12pt;
+    padding: 3px;
+    max-height: 100%;
+}
+
+@media(max-width: 768px) {
+    #travel-cards .row {
+        height: 100vh;
+        margin: 0;
+    }
+}
+
+
+/* ------------------------------------ Contact Form from Bootstrap--- */
+
+#contact-form {
+    margin: 0;
+}
+
+.form-container .row {
+    margin: 5px;
+    padding: 10px;
+    border: 3px solid #5cdb95;
+    border-radius: 30px;
+    background-image: radial-gradient( circle at bottom right, #05386b, #008080 40% );
+}
+
+.form-group {
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: #ffffff;
+    font-size: 15pt;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .4rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: 2px solid #5cdb95;
+    border-radius: 30px;
+}
+
+.submit-button {
+    margin-top: 10px;
+    border: 3px solid #5cdb95;
+    border-radius: 12px;
+}
+
+.submit-button:hover {
+    background-image: radial-gradient( circle at bottom right, #05386b, #008080 60% );
+}
+
+.center-button {
+    padding: 0;
 }
 
 

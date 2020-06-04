@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 	<script src="https://kit.fontawesome.com/0764c37c6e.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+	<link href="css/hover.css" rel="stylesheet" media="all">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 	<title>Mateo's Travel Blog</title>
 </head>
@@ -26,10 +27,8 @@
 	<!---------------------------------------------------------------------------------- Header -->
 	<section id="header">
 		<header>
-			<a href="travel-tips.html"></a>
-
-			<div class="col-12 no-gutters pb-5">
-				<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+			<div class="col-12 no-gutters">
+				<nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
 					<div class="container-fluid">
 						<a class="navbar-brand"
 							href="index.html"><img src="assets/logo/mateos-travel-blog-logo-white.png"></a>
@@ -37,7 +36,7 @@
                         <span class="navbar-toggler-icon"></span>
                         </button>
 							<div class="collapse navbar-collapse" id="navbarNav">
-								<ul class="navbar-nav ml-auto">
+								<ul class="navbar-nav ml-auto text-right">
 									<li class="nav-item list-inline-item">
 										<a class="nav-link"
 											href="index.html"><i class="fa fa-home mr-2 d-none d-sm-inline" aria-hidden="true"></i><span>Home</span></a>
@@ -48,12 +47,12 @@
 											href="experiences.html"><i class="fa fa-suitcase-rolling mr-2 d-none d-sm-inline" aria-hidden="true"></i><span>My Experiences</span></a>
 									</li>
 
-									<li class="nav-item list-inline-item active">
+									<li class="nav-item list-inline-item">
 										<a class="nav-link"
 											href="travel-tips.html"><i class="fa fa-info mr-2 d-none d-sm-inline" aria-hidden="true"></i><span>Travel Tips</span></a>
 									</li>
 
-									<li class="nav-item list-inline-item">
+									<li class="nav-item list-inline-item active">
 										<a class="nav-link"
 											href="contact.html"><i class="fa fa-comment-o mr-2 d-none d-sm-inline" aria-hidden="true"></i><span>Contact</span></a>
 									</li>
@@ -66,91 +65,99 @@
 	</section>
 
 	<!---------------------------------------------------------------------------------- Intro Jumbotron -->
-	<div class="jumbotron jumbotron-experience text-center mt-4">
-		<div class="intro-image">
-			<img src="assets/logo/mateos-travel-blog-logo-white.png" class="img-fluid" alt="Responsive image">
+	<div class="jumbotron jumbotron-contact text-center">
+		<div class="jumbo-overlay"></div>
+		<div class="jumbo-intro">
+			<img src="assets/images/quotes-02.png" class="img-fluid quote" alt="Responsive image">
 			<div class="row">
-				<div class="intro-buttons col-12">
-					<button type="button" class="btn btn-outline-primary text-white btn-large">My Experiences</button>
-					<button type="button" class="btn btn-outline-primary text-white btn-large">Travel Tips</button>
+				<div class="intro-button col-12">
+					<a href="index.html" class="hvr-grow">
+						<button type="button" class="btn text-white btn-lg">Let's Go Back Home</button></a>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!---------------------------------------------------------------------------------- Travel Tip Intro -->
-	<section id="travel-tips-intro">
-		<div class="row text-center">
-			<div class="container-fluid">
-				<div class="col-12">
-					<h1 class="display-5 text-uppercase">Hit Me Up!</h1>
-					<hr>
-					<div class="col-12">
-						<p class="lead list-inline">Thanks for taking this ride with me!</p>
-						<p class="lead">Everyday I feel so blessed that I was given this wonderful oppertunity to travel to places that I had no idea existed. My love for travel continues to be ignited as I learn about the limitless possiblilites our there waiting for me. I hope my travel blog has encouraged you to pack your bags and jump on a plane to explore the unknown!</p>
-						<p class="lead">Please share with me any comments, questions, or experinces of your own that you think are relevant for me to know.</p>
-					</div>
+	<section id="travel-tips">
+		<div class="container-fluid text-center">
+			<div class="col-12">
+				<h2 class="display-4 text-uppercase list-inline">Share Your Thoughts!</h2>
+				<h3 class="display-4 text-uppercase list-inline">Contact Me</h3>
+				<hr class="hr-style">
+			</div>
+			<div class="row tips-intro">
+				<div class="col-12 tips-text">
+					<p>Thanks for taking this trip with me!</p>
+					<p>Everyday I feel so blessed that I was given this wonderful oppertunity to travel
+						to places that I had no idea existed. My love for travel continues to be ignited as I learn
+						about the limitless possiblilites our there waiting for me to find. I hope my travel blog has
+						encouraged you to pack your bags and jump on a plane to explore the unknown!</p>
+					<p>Please share with me any comments, questions, or experinces of your own that you
+						think are relevant for me to know.</p>
+					<p>Safe travels!</p>
 				</div>
 			</div>
 		</div>
-		<hr>
 	</section>
 
-	<!----------------------------------------------------------------------------------   ---->
 
+	<!----------------------------------------------------------------------------------   ---->
 	<section id="contact-form">
 		<form>
-			<div class="row">
-				<div class="col-4 form-group">
-					<label for="exampleFormControlInput1">First Name</label>
-					<input type="text" class="form-control" placeholder="First Name">
+			<div class="container-fluid form-container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4 form-group">
+						<label for="exampleFormControlInput1">First Name</label>
+						<input type="text" class="form-control" placeholder="First Name">
                 </div>
-				<div class="col-4 form-group">
-                    <label for="exampleFormControlInput1">Last Name</label>
-					<input type="text" class="form-control" placeholder="Last Name">
+						<div class="col-xs-12 col-sm-6 col-md-4 form-group">
+							<label for="exampleFormControlInput1">Last Name</label>
+							<input type="text" class="form-control" placeholder="Last Name">
                 </div>
-                <div class="col-4 form-group">
-                    <label for="exampleFormControlInput1">Phone Number</label>
-					<input type="text" class="form-control" placeholder="Phone Number">
+							<div class="col-sm-12 col-md-4 form-group">
+								<label for="exampleFormControlInput1">Phone Number</label>
+								<input type="text" class="form-control" placeholder="(555) 555-5555">
                 </div>
-				<div class="col-12 form-group">
-					<label for="exampleFormControlInput1">Email Address</label>
-					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+								<div class="col-12 form-group">
+									<label for="exampleFormControlInput1">Email Address</label>
+									<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
-				<div class="col-12 form-group">
-					<label for="exampleFormControlTextarea1">Share your comments!</label>
-					<textarea class="form-control" placeholder="Comments..." id="exampleFormControlTextarea1" rows="4"></textarea>
-				</div>
-			</div>
+									<div class="col-12 form-group">
+										<label for="exampleFormControlTextarea1">Share your comments!</label>
+										<textarea type="text" class="form-control" placeholder="Comments..." id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+									<div class="col-12 center-button">
+										<button type="submit" class="btn text-white btn-lg submit-button">Submit</button>
+									</div>
+								</div>
+							</div>
 		</form>
 	</section>
 
 	<!---------------------------------------------------------------------------------- Footer -->
-
 	<footer>
-		<div class="container-fluid">
+		<div class="container-fluid footer">
 			<div class="row text-center">
 				<div class="col-md-6">
-					<hr class="light">
-					<h3>Connect With Me</h3>
-					<hr class="light">
-					<p>561-229-8259</p>
+					<hr class="hr-style">
+					<h3 class="display-4 text-uppercase list-inline">Connect With Me</h3>
+					<hr class="hr-style">
+					<p>561-111-2222</p>
 					<p>mavila2@outlook.com</p>
 				</div>
 				<div class="col-md-6">
-					<hr class="light">
-					<h3>Find Me Online</h3>
-					<hr class="light">
+					<hr class="hr-style">
+					<h3 class="display-4 text-uppercase list-inline">Find Me Online</h3>
+					<hr class="hr-style">
 					<div class="col-12 social">
-						<a href="facebook.com"><i class="fa fa-facebook"></i></a>
-						<a href="instagram.com"><i class="fa fa-instagram"></i></a>
-						<a href="linkedin.com"><i class="fa fa-linkedin"></i></a>
-						<a href="youtube.com"><i class="fa fa-youtube"></i></a>
+						<a href="https://www.facebook.com/mathew.avila.54" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.instagram.com/_mateo561_/" target="_blank"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/in/mathewavila/" target="_blank"><i class="fa fa-linkedin"></i></a>
 					</div>
 				</div>
 				<div class="col-12">
-					<hr class="light">
-
+					<hr class="hr-style">
 				</div>
 			</div>
 		</div>
