@@ -618,7 +618,33 @@ h1,h2,h3,h4 {
     max-height: 100%;
 }
 
+.vertical-accordion a {
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: underline;
+    background-color: transparent;
+}
 
+.vertical-accordion a:hover {
+    font-weight: 400;
+    color: #5cdb95;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.small-container a {
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.small-container a:hover {
+    font-weight: 400;
+    color: #5cdb95;
+    text-decoration: none;
+    background-color: transparent;
+}
 
 /* ----------------------------------------------------------------------- TRAVEL TIPS ----- */
 /* ------------------------------------------------- Travel Tips Intro ----- */
@@ -796,6 +822,14 @@ label {
     border-radius: 30px;
 }
 
+.invalid-feedback {
+    width: 100%;
+    margin-top: .25rem;
+    margin-left: 10px;
+    font-size: 80%;
+    color: #ffffff;
+}
+
 .submit-button {
     margin-top: 10px;
     border: 3px solid #5cdb95;
@@ -803,7 +837,7 @@ label {
 }
 
 .submit-button:hover {
-    background-image: radial-gradient( circle at bottom right, #05386b, #008080 60% );
+    background-image: radial-gradient( circle at bottom right, #05386b, #008080 70% );
 }
 
 .center-button {

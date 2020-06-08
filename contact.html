@@ -91,10 +91,10 @@
 					<p>Thanks for taking this trip with me!</p>
 					<p>Everyday I feel so blessed that I was given this wonderful oppertunity to travel
 						to places that I had no idea existed. My love for travel continues to be ignited as I learn
-						about the limitless possiblilites our there waiting for me to find. I hope my travel blog has
+						about the limitless possiblilites out there waiting to be explored. I hope my travel blog has
 						encouraged you to pack your bags and jump on a plane to explore the unknown!</p>
 					<p>Please share with me any comments, questions, or experinces of your own that you
-						think are relevant for me to know.</p>
+						think are relevant for me to know or that you would like for me to share.</p>
 					<p>Safe travels!</p>
 				</div>
 			</div>
@@ -104,36 +104,58 @@
 
 	<!----------------------------------------------------------------------------------   ---->
 	<section id="contact-form">
-		<form>
+		<form class="needs-validation" novalidate>
 			<div class="container-fluid form-container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-4 form-group">
 						<label for="exampleFormControlInput1">First Name</label>
-						<input type="text" class="form-control" placeholder="First Name">
+						<input type="text" class="form-control" placeholder="First Name" required>
                 </div>
 						<div class="col-xs-12 col-sm-6 col-md-4 form-group">
 							<label for="exampleFormControlInput1">Last Name</label>
-							<input type="text" class="form-control" placeholder="Last Name">
+							<input type="text" class="form-control" placeholder="Last Name" required>
                 </div>
 							<div class="col-sm-12 col-md-4 form-group">
 								<label for="exampleFormControlInput1">Phone Number</label>
-								<input type="text" class="form-control" placeholder="(555) 555-5555">
+								<input type="text" class="form-control" placeholder="(555) 555-5555" required>
                 </div>
 								<div class="col-12 form-group">
 									<label for="exampleFormControlInput1">Email Address</label>
-									<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-									<div class="col-12 form-group">
-										<label for="exampleFormControlTextarea1">Share your comments!</label>
-										<textarea type="text" class="form-control" placeholder="Comments..." id="exampleFormControlTextarea1" rows="3"></textarea>
-									</div>
-									<div class="col-12 center-button">
-										<button type="submit" class="btn text-white btn-lg submit-button">Submit</button>
-									</div>
+									<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+									<div class="invalid-feedback">Please provide a valid email address.</div>
+								</div>
+								<div class="col-12 form-group">
+									<label for="exampleFormControlTextarea1">Share your comments!</label>
+									<textarea type="text" class="form-control" placeholder="Comments..." id="exampleFormControlTextarea1" rows="3" required></textarea>
+								</div>
+								<div class="col-12 center-button">
+									<button type="submit" class="btn text-white btn-lg submit-button">Submit</button>
 								</div>
 							</div>
+						</div>
 		</form>
 	</section>
+
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+	</script>
 
 	<!---------------------------------------------------------------------------------- Footer -->
 	<footer>
@@ -151,9 +173,12 @@
 					<h3 class="display-4 text-uppercase list-inline">Find Me Online</h3>
 					<hr class="hr-style">
 					<div class="col-12 social">
-						<a href="https://www.facebook.com/mathew.avila.54" target="_blank"><i class="fa fa-facebook"></i></a>
-						<a href="https://www.instagram.com/_mateo561_/" target="_blank"><i class="fa fa-instagram"></i></a>
-						<a href="https://www.linkedin.com/in/mathewavila/" target="_blank"><i class="fa fa-linkedin"></i></a>
+						<a href="https://www.facebook.com/mathew.avila.54"
+							target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.instagram.com/_mateo561_/"
+							target="_blank"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/in/mathewavila/"
+							target="_blank"><i class="fa fa-linkedin"></i></a>
 					</div>
 				</div>
 				<div class="col-12">
