@@ -104,6 +104,7 @@ h1,h2,h3,h4 {
 
 .navbar {
     margin: 0;
+    position: 
 }
 
 .navbar-brand {
@@ -121,6 +122,7 @@ h1,h2,h3,h4 {
 .list-inline-item:not(:last-child) {
     margin-right: 0;
 }
+
 
 
 /* ------------------------------------ Intro Jumbotron --- */
@@ -182,18 +184,18 @@ h1,h2,h3,h4 {
     width: auto;
 }
 
-.jumbotron button {
+.intro-button {
+    margin-top: 80px;
+    color: #fafafa;
+}
+
+.intro-button .btn {
     border: 2px solid #5cdb95;
     border-radius: 12px;
 }
 
-.jumbotron button:hover {
+.intro-button .btn:hover {
     background-image: radial-gradient( circle at bottom right, #05386b, #008080 50% );
-}
-
-.intro-button {
-    margin-top: 80px;
-    color: #fafafa;
 }
 
 /* ------------------------------------ Index - Intro Img and Text --- */
