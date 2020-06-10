@@ -285,15 +285,16 @@ Displayed on My Experiences (Located in experiences.html)
 
 ### Code Validators
 1. HTML Validator
-- Ran code and confirmed that no major HTML errors appear.
+- Final Runthrough: Ran code and confirmed that no major HTML errors appear.
     - https://validator.w3.org/
-
+- When running code through the HTML Validator, the major issue that has been corrected included:
+    - Jumbotron Button nested inside of an a attribute.
 
 2. CSS Validator
-- Ran code and confired that no major CSS errors appear.
+- Final Runthrough: Ran code and confired that no major CSS errors appear.
     - https://jigsaw.w3.org/css-validator/#validate_by_uri
-- When running code through the CSS Validator, ..........
-
+- When running code through the CSS Validator, the major issue that has been corrected included:
+    - Incorrect value for background-repeat: on .item.
 
 
 ## **Deployment**
