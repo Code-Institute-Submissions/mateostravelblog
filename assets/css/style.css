@@ -80,7 +80,7 @@ body {
 
 h1,h2,h3,h4 {
     color: #fafafa;
-    text-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    text-shadow: 0 5px 25px rgba(0, 0, 0, 1);
 }
 
 /* ------------------------------------ HR Style From https://css-tricks.com/examples/hrs/ - by Dan Eden --- */
@@ -130,7 +130,7 @@ h1,h2,h3,h4 {
     -o-background-size: cover;
     border-bottom-left-radius: 3.5%;
     border-bottom-right-radius: 3.5%;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
 }
 
 .jumbotron-index {
@@ -217,7 +217,7 @@ h1,h2,h3,h4 {
     margin-bottom: 20px;
     border: 2px solid #5cdb95;
     border-radius: 50px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -340,7 +340,7 @@ h1,h2,h3,h4 {
 
 .vertical-accordion {
     height: 100%;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
     margin: 40px 30px 40px 30px;
     border: 2px solid #5cdb95;
     border-radius: 50px;
@@ -390,7 +390,7 @@ h1,h2,h3,h4 {
   transform: skew(-2deg);
   border: 2px solid #5cdb95;
   border-radius: 50px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 1.5);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
 }
 
 .gallery-wrap {
@@ -545,7 +545,7 @@ h1,h2,h3,h4 {
     margin-bottom: 20px;
     border: 2px solid #5cdb95;
     border-radius: 50px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -560,7 +560,7 @@ h1,h2,h3,h4 {
     margin-bottom: 20px;
     border: 2px solid #5cdb95;
     border-radius: 50px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -575,7 +575,7 @@ h1,h2,h3,h4 {
     margin-bottom: 20px;
     border: 2px solid #5cdb95;
     border-radius: 50px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -590,7 +590,7 @@ h1,h2,h3,h4 {
     margin-bottom: 20px;
     border: 2px solid #5cdb95;
     border-radius: 50px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -605,7 +605,7 @@ h1,h2,h3,h4 {
     margin-bottom: 20px;
     border: 2px solid #5cdb95;
     border-radius: 50px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -852,7 +852,7 @@ label {
 
 
 
-/* ------------------------------------ Footer --- */
+/* ------------------------------------ Footer Design From https://youtu.be/9cKsq14Kfsw --- */
 
 footer {
     color: #fafafa;
@@ -888,7 +888,7 @@ footer {
     border-radius: 50px;
     color: #fafafa;
     background: transparent;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 1.5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
     transition: all .35s ease-in-out;
     -moz-transition: all .35s ease-in-out;
     -webkit-transition: all .35s ease-in-out;

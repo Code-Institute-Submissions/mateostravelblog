@@ -1,4 +1,4 @@
-<img src="assets/logo/mateos-travel-blog-logo-white.png" style="height=10px;">
+<img width="auto" height="100" src="assets/logo/mateos-travel-blog-logo-white.png">
 
 # **Mateo’s Travel Blog**
 
@@ -74,6 +74,7 @@ Footer Structure
 Mockup
 - Please refer to the PDF file called skeleton-layout.pdf
     - The file is located in the assets folder under the mockup subfolder.
+    - Please keep in mind that the mockup was a first draft and did not include some of the final page details.
 
 
 ### <ins>Surface:</ins>
@@ -218,9 +219,17 @@ Displayed on My Experiences (Located in experiences.html)
 
 ## **Testing**
 
+### User Stories
+1. Below I conducted testing to confirm that the original goal of each user story is achived.
+2. User Stroies:
+- An “Unexperienced Traveler” is defined as a user who is new to traveling abroad. They will land on my site to learn of my travel experiences and to gain travel tips that will aid them in their planning. They will be encouraged to follow my tips.
+- An “Experienced Traveler” is defined as a user who has traveled abroad in the past. They will land on my site to read about my experiences and travel tips. They will then be encouraged to contact me with their own experiences and travel tips they think I should add to my site.
+
+
 ### Navbar, Jumbotron Header, and Footer (All Pages)
 1. Navbar
-- Navbrand maintains position at top left corner on all screensizes.
+- Navbrand maintains position at top left corner from XL to SM screen sizes.
+    - From breakpoint 576px, the Navbrand is hidden to increase screen realestate for content.
 - The navbar works perfectly in all screensizes.
 - From MD to XL, the Navbar is visible on the top, and maintains position as user scrolls down.
 - From XS to MD, the Navbar is visible when clicking on burder icon at the top right corner.
@@ -253,10 +262,10 @@ Displayed on My Experiences (Located in experiences.html)
 - Below the text will be an interactive gallery.
 - Gallery tested.
     - When hovering over an images, the remaining images will be pushed aside to make the image visibe.
-
 4. From MD to XS, the following format is visible:
 - Country Name | Single Image | Summary of Experience
-
+5. User Stroies
+- Experienced Travelers and New Travelers are both encouraged to check out some of the locations I've vistied through hyperlinks in my content.
 
 ### Travel Tips
 1. Travel Tips rows and columns are configured correctly on all screen sizes.
@@ -264,6 +273,8 @@ Displayed on My Experiences (Located in experiences.html)
 - From SM to XS, travel cards will be visible in a col-12 format.
 2. Travel tip cards will expand when cursor hovers above the card.
 3. On phone screens, users will have to click on cards to expand.
+4. User Stroies
+- Experienced Travelers and New Travelers are both encouraged to check out my tips and to  of the locations I've vistied through hyperlinks in my content.
 
 
 ### Contact
@@ -275,13 +286,18 @@ Displayed on My Experiences (Located in experiences.html)
 
 ### Browser Test
 1. Google Chrome
-- 
+- Inspected XL through XS screensizes to confirm all features and content looked as desired.
 
 2. Firefox Mozilla
-- 
+- Inspected XL through XS screensizes to confirm all features and content looked as desired.
 
-3. Microsoft Edge
-- 
+3. Internet Explorer - Microsoft Edge
+- Inspected XL through XS screensizes to confirm all features and content looked as desired.
+
+### Developer Tools
+1. Developer Tools used to fix code throughout UX process:
+- Chrome Dev Tool
+- Firefox Developer Tools
 
 ### Code Validators
 1. HTML Validator
@@ -295,6 +311,8 @@ Displayed on My Experiences (Located in experiences.html)
     - https://jigsaw.w3.org/css-validator/#validate_by_uri
 - When running code through the CSS Validator, the major issue that has been corrected included:
     - Incorrect value for background-repeat: on .item.
+- Currently, 30 errors appear to show for: https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
+    - Thought this would be important to state.
 
 
 ## **Deployment**
