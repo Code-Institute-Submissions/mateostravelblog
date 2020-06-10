@@ -72,7 +72,8 @@ Footer Structure
 
 ### <ins>Skeleton:</ins>
 Mockup
-- Please refer to the PDF file under assets called skeleton-layout.pdf.
+- Please refer to the PDF file called skeleton-layout.pdf
+    - The file is located in the assets folder under the mockup subfolder.
 
 
 ### <ins>Surface:</ins>
@@ -89,8 +90,6 @@ Mockup
 
 
 ## **Features**
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 ### <ins>Existing Features:</ins>
 
@@ -197,7 +196,7 @@ Displayed on My Experiences (Located in experiences.html)
 - This project uses the Bootstrap library:
     - To divide sections into rows and columns for various screen sizes.
     - To install a drop-down menu under experiences.html.
-    - To create a submission form under contact.html. 
+    - To create a submission form under contact.html.
 - https://getbootstrap.com
 
 
@@ -244,7 +243,7 @@ Displayed on My Experiences (Located in experiences.html)
     - Link are not meant to open in a different tab. That is on purpose.
 
 
-## My Experiences
+### My Experiences
 1. My Experiences rows and columns are configured correctly on all screen sizes.
 2. Accordian Dropdown Menu is visible from XL to LG screen sizes.
 3. Under each dropdown menu option is a specific country.
@@ -259,7 +258,7 @@ Displayed on My Experiences (Located in experiences.html)
 - Country Name | Single Image | Summary of Experience
 
 
-## Travel Tips
+### Travel Tips
 1. Travel Tips rows and columns are configured correctly on all screen sizes.
 - From XL to MD, travel cards will be visible in a col-md-6 format.
 - From SM to XS, travel cards will be visible in a col-12 format.
@@ -267,12 +266,33 @@ Displayed on My Experiences (Located in experiences.html)
 3. On phone screens, users will have to click on cards to expand.
 
 
-## Contact
+### Contact
 1. Contact page rows and columns are configured correctly on all screen sizes.
 2. Contact page form submitted without any information and error message received.
 3. Contact page form submitted with an invalid email address and relevant error message appears.
 4. Contact page form submitted with all correct infromation in each field.
 - Each field turned green and some contained green checkmark.
+
+### Browser Test
+1. Google Chrome
+- 
+
+2. Firefox Mozilla
+- 
+
+3. Microsoft Edge
+- 
+
+### Code Validators
+1. HTML Validator
+- Ran code and confirmed that no major HTML errors appear.
+    - https://validator.w3.org/
+
+
+2. CSS Validator
+- Ran code and confired that no major CSS errors appear.
+    - https://jigsaw.w3.org/css-validator/#validate_by_uri
+- When running code through the CSS Validator, ..........
 
 
 

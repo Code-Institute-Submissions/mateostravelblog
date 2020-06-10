@@ -102,11 +102,6 @@ h1,h2,h3,h4 {
 /* ----------------------------------------------------------------------- HOME PAGE ----- */
 /* ------------------------------------ Nav Bar --- */
 
-.navbar {
-    margin: 0;
-    position: 
-}
-
 .navbar-brand {
     margin-left: 10px;
 }
@@ -123,7 +118,11 @@ h1,h2,h3,h4 {
     margin-right: 0;
 }
 
-
+@media(max-width: 576px) {
+    .navbar-brand {
+    visibility: hidden;
+    }
+}
 
 /* ------------------------------------ Intro Jumbotron --- */
 
@@ -195,7 +194,7 @@ h1,h2,h3,h4 {
 }
 
 .intro-button .btn:hover {
-    background-image: radial-gradient( circle at bottom right, #05386b, #008080 50% );
+    background-image: radial-gradient( circle at center right, #05386b, #008080 50% );
 }
 
 /* ------------------------------------ Index - Intro Img and Text --- */
@@ -207,7 +206,7 @@ h1,h2,h3,h4 {
 }
 
 #intro-text h2 {
-    font-size: 35pt;
+    font-size: 30pt;
     padding: 25px 25px 25px 25px;
 }
 
@@ -234,7 +233,7 @@ h1,h2,h3,h4 {
     font-family: filson-soft, sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 15pt;
+    font-size: 12pt;
     padding: 20px 30px 20px 30px;
     max-height: 100%;
 }
@@ -251,7 +250,7 @@ h1,h2,h3,h4 {
 }
 
 .menu-map h2 {
-    font-size: 35pt;
+    font-size: 30pt;
     padding: 25px 25px 25px 25px;
 }
 
@@ -294,7 +293,7 @@ h1,h2,h3,h4 {
 }
 
 #experiences h2 {
-    font-size: 35pt;
+    font-size: 30pt;
     padding: 25px 25px 25px 25px;
 }
 
@@ -311,9 +310,20 @@ h1,h2,h3,h4 {
     font-family: filson-soft, sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 15pt;
+    font-size: 12pt;
     padding: 20px 30px 20px 30px;
     max-height: 100%;
+}
+
+@media(max-width: 768px) {
+    .exp-text {
+    font-family: filson-soft, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 12pt;
+    padding: 20px 30px 20px 30px;
+    max-height: 100%;
+    }
 }
 
 /* ------------------------------ Accordion Collapsible Exp. Menu from Bootstrap */
@@ -325,7 +335,7 @@ h1,h2,h3,h4 {
 }
 
 #collapsible-menu h2 {
-    font-size: 35pt;
+    font-size: 30pt;
     padding: 25px 25px 25px 25px;
 }
 
@@ -343,17 +353,17 @@ h1,h2,h3,h4 {
 }
 
 .card-header:hover {
-    background-image: radial-gradient( circle at bottom right, #05386b, #008080 40% );
+    background-image: radial-gradient( circle at center right, #05386b, #008080 50% );
 }
 
 .card-1 .card-header:hover {
-    background-image: radial-gradient( circle at bottom right, #05386b, #008080 40% );
+    background-image: radial-gradient( circle at top right, #05386b, #008080 50% );
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
 
 .card-5 .card-header:hover {
-    background-image: radial-gradient( circle at bottom right, #05386b, #008080 40% );
+    background-image: radial-gradient( circle at bottom right, #05386b, #008080 50% );
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
@@ -615,7 +625,7 @@ h1,h2,h3,h4 {
     font-family: filson-soft, sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 15pt;
+    font-size: 12pt;
     padding: 20px 30px 30px 30px;
     max-height: 100%;
 }
@@ -658,7 +668,7 @@ h1,h2,h3,h4 {
 }
 
 #travel-tips h2 {
-    font-size: 35pt;
+    font-size: 30pt;
     padding: 25px 25px 25px 25px;
 }
 
@@ -675,7 +685,7 @@ h1,h2,h3,h4 {
     font-family: filson-soft, sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 15pt;
+    font-size: 12pt;
     padding: 20px 30px 20px 30px;
     max-height: 100%;
 }
@@ -755,11 +765,11 @@ h1,h2,h3,h4 {
     transform: translateY(-50%);
 }
 
-.card-tip .card-details .card-text h1 {
+.card-tip .card-details .card-text h2 {
     margin: 0;
     padding: 0;
     line-height: 20px;
-    font-size: 20px;
+    font-size: 15pt;
     text-transform: uppercase;
 }
 
